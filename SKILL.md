@@ -1,48 +1,9 @@
 ---
 name: pricing-engine
 description: Orchestrate pricing operations — calculate prices through waterfall rules, create/manage CEL-based pricing rules, run promotions (BOGO, volume tiers, flash sales), manage customer segments, generate quotes, convert currencies, and calculate taxes. Use when calculating prices, creating discount rules, running promotions, quoting customers, converting currencies, or computing taxes.
-version: "1.0.0"
 license: Apache-2.0
 compatibility: Requires mcp-pricing server connected. CEL expression engine, 170+ currencies, 50+ country tax rates.
-allowed-tools:
-  - price_calculate
-  - rules_create
-  - rules_list
-  - rules_activate
-  - rules_deactivate
-  - rules_update
-  - rules_history
-  - rules_schedule
-  - rules_conflicts
-  - rules_test
-  - rules_validate
-  - catalog_upsert
-  - catalog_get
-  - catalog_list
-  - segments_create
-  - segments_list
-  - promotions_create
-  - promotions_list
-  - promotions_apply
-  - quotes_create
-  - quotes_get
-  - quotes_approve
-  - market_fx_convert
-  - market_fx_rates
-  - market_tax
-  - audit_log
-tags:
-  - business
-  - pricing
-  - revenue
-  - promotions
-  - quotes
-  - fx
-  - tax
-references:
-  - references/tool-sequences.md
-  - references/cross-mcp-workflows.md
-  - references/examples.md
+allowed-tools: [price_calculate, rules_create, rules_list, rules_activate, rules_deactivate, rules_update, rules_history, rules_schedule, rules_conflicts, rules_test, rules_validate, catalog_upsert, catalog_get, catalog_list, segments_create, segments_list, promotions_create, promotions_list, promotions_apply, quotes_create, quotes_get, quotes_approve, market_fx_convert, market_fx_rates, market_tax, audit_log]
 metadata:
   author: Zavora AI
   mcp-server: mcp-pricing
